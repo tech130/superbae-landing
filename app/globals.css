@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #131313;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Superbae design tokens (from Figma) */
+  --color-ink: #131313;
+  --color-ink-70: rgba(19, 19, 19, 0.7);
+  --color-ink-60: rgba(19, 19, 19, 0.6);
+  --color-charcoal: #2a2a2a;
+
+  /* SF Pro is an Apple system font with no public webfont license — the
+     design uses it for headings, so we fall back to the platform's native
+     system-ui stack (renders as SF Pro on macOS/iOS) rather than substituting
+     a different family. Swap in a licensed SF Pro alternative if needed. */
+  --font-display: "SF Pro Display", -apple-system, system-ui, ui-sans-serif, sans-serif;
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-accent: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Utility: placeholder image block used until real Figma assets are downloaded */
+.figma-asset-placeholder {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.06) 10px,
+    rgba(0, 0, 0, 0.03) 10px,
+    rgba(0, 0, 0, 0.03) 20px
+  );
+}
+
+/* Utility: infinite horizontal marquee — used by the testimonials carousel.
+   Track renders its items twice; translating by -50% of the (double-width)
+   track loops seamlessly back to the start. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}

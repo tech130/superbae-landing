@@ -1,0 +1,32 @@
+import NavBar from "@/components/NavBar";
+import Hero from "@/components/Hero";
+import WhatIsSuperbae from "@/components/WhatIsSuperbae";
+import WhySuperbaeExists from "@/components/WhySuperbaeExists";
+import ThirtySuperHabits from "@/components/ThirtySuperHabits";
+import YearAtSuperbae from "@/components/YearAtSuperbae";
+import MomentsGallery from "@/components/MomentsGallery";
+import Highlights from "@/components/Highlights";
+import Ecosystem from "@/components/Ecosystem";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import BannerCTA from "@/components/BannerCTA";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <main className="overflow-x-hidden">
+      <NavBar />
+      <Hero />
+      <WhatIsSuperbae />
+      <WhySuperbaeExists />
+      <ThirtySuperHabits />
+      <YearAtSuperbae />
+      <Highlights />
+      <Ecosystem />
+      <Testimonials />
+      <Pricing />
+      <BannerCTA />
+      <Footer />
+    </main>
+  );
+}
