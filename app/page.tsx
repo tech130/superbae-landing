@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import BannerCTA from "@/components/BannerCTA";
 import Footer from "@/components/Footer";
+import StopSwitching from "@/components/stopswitching/StopSwitching";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <BannerCTA />
+      <StopSwitching />
       <Footer />
     </main>
   );

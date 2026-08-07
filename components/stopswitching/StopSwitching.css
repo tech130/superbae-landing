@@ -1,0 +1,729 @@
+/* =========================================
+   StopSwitching Section
+   ========================================= */
+
+.ss-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0 0;
+  overflow: hidden;
+}
+
+/* ---- Top Content ---- */
+.ss-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 20px;
+}
+
+/* Pink pill badge */
+.ss-badge {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid rgba(19, 19, 19, 0.20);
+}
+
+/* Main heading */
+.ss-heading {
+  color: #000;
+  word-break: break-word;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Subtitle text */
+.ss-subtitle {
+  margin-bottom: 10px;
+  color: #747474;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Download App button */
+.ss-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px 10px 20px;
+  border-radius: 38px;
+  border: 1px solid rgba(238, 241, 234, 0.04);
+  background: var(--Primary-SuperBae-Website, linear-gradient(98deg, #D14E9A 14%, #FF566D 73.56%));
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 20px rgba(209, 78, 154, 0.35);
+  text-decoration: none;
+}
+
+.ss-arrow {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 13px 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  background: #FFF;
+}
+
+.ss-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(209, 78, 154, 0.45);
+}
+
+.ss-download-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ---- Product Collage ---- */
+.ss-collage {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 480px;
+  margin: 40px auto 0;
+}
+
+/* Individual product items */
+.ss-product {
+  position: absolute;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.ss-product:hover {
+  transform: scale(1.06) translateY(-4px);
+}
+
+.ss-product img,
+.ss-product svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  overflow: visible;
+}
+
+/* Placeholder SVG styling */
+.ss-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+  border: 2px dashed #ddd;
+  background: #fafafa;
+}
+
+/* ================================================
+   DESKTOP (default — above 1024px)
+   ================================================ */
+
+/* Tumbler - far left */
+.ss-product--tumbler {
+  width: 27%;
+  height: 100%;
+  top: -5%;
+  left: -25%;
+}
+
+/* Sunglasses - top left area */
+.ss-product--sunglasses {
+  width: 36%;
+  height: 26%;
+  top: 10%;
+  left: 3%;
+}
+
+/* Lipstick - between tumbler and scrunchie */
+.ss-product--lipstick {
+  width: 26%;
+  height: 40%;
+  top: 39%;
+  left: 18%;
+}
+
+/* Scrunchie - bottom left */
+.ss-product--scrunchie {
+  width: 34%;
+  height: 57%;
+  top: 33%;
+  left: -1%;
+}
+
+/* iPhone - center */
+.ss-product--iphone {
+  width: 22%;
+  height: 83%;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.ss-product--iphone:hover {
+  transform: translateX(-50%) scale(1.04) translateY(-4px);
+}
+
+/* Apple Watch - right of center */
+.ss-product--watch {
+  width: 23%;
+  height: 49%;
+  top: 10%;
+  right: 18%;
+}
+
+/* Sunscreen - top right */
+.ss-product--sunscreen {
+  width: 36%;
+  height: 26%;
+  bottom: 17%;
+  right: 3%;
+}
+
+/* Perfume - right */
+.ss-product--perfume {
+  width: 21%;
+  height: 44%;
+  top: 10%;
+  right: 1%;
+}
+
+/* Headphones - far right top */
+.ss-product--headphones {
+  width: 42%;
+  height: 88%;
+  top: 4%;
+  right: -39%;
+}
+
+/* AirPods Max - far right bottom */
+.ss-product--airpods {
+  width: 13%;
+  height: 29%;
+  right: 2%;
+  top: 48%;
+}
+
+
+
+
+
+
+/* ================================================
+   LAPTOP (max 1024px)
+   ================================================ */
+@media (max-width: 1024px) {
+  .ss-heading {
+    font-size: 44px;
+    letter-spacing: 0.8px;
+  }
+
+  .ss-subtitle {
+    font-size: 18px;
+  }
+
+  .ss-collage {
+    height: 420px;
+    max-width: 780px;
+  }
+
+  .ss-product--tumbler {
+    width: 23%;
+    height: 85%;
+    top: 2%;
+    left: -21%;
+  }
+
+  .ss-product--sunglasses {
+    width: 37%;
+    height: 26%;
+    top: 15%;
+    left: 2%;
+  }
+
+  .ss-product--lipstick {
+    width: 25%;
+    height: 43%;
+    top: 40%;
+    left: 18%;
+  }
+
+  .ss-product--scrunchie {
+    width: 38%;
+    height: 56%;
+    top: 29%;
+    left: -5%;
+  }
+
+  .ss-product--iphone {
+    width: 22%;
+    height: 80%;
+    top: 6%;
+  }
+
+  .ss-product--watch {
+    width: 24%;
+    height: 47%;
+    top: 15%;
+    right: 18%;
+  }
+
+  .ss-product--sunscreen {
+    width: 32%;
+    height: 24%;
+    bottom: 16%;
+    right: 4%;
+  }
+
+  .ss-product--perfume {
+    width: 15%;
+    height: 40%;
+    top: 15%;
+    right: 6%;
+  }
+
+  .ss-product--headphones {
+    width: 34%;
+    height: 70%;
+    top: 8%;
+    right: -30%;
+  }
+
+  .ss-product--airpods {
+    width: 12%;
+    height: 26%;
+    right: 2%;
+    top: 50%;
+  }
+}
+
+/* ================================================
+   DESKTOP (min-width: 1025px) - use laptop layout
+   ================================================ */
+@media (min-width: 1025px) {
+  .ss-heading {
+    font-size: 44px;
+    letter-spacing: 0.8px;
+  }
+
+  .ss-subtitle {
+    font-size: 18px;
+  }
+
+  .ss-collage {
+    height: 420px;
+    max-width: 780px;
+  }
+
+  .ss-product--tumbler {
+    width: 23%;
+    height: 85%;
+    top: 2%;
+    left: -21%;
+  }
+
+  .ss-product--sunglasses {
+    width: 37%;
+    height: 26%;
+    top: 15%;
+    left: 2%;
+  }
+
+  .ss-product--lipstick {
+    width: 25%;
+    height: 43%;
+    top: 40%;
+    left: 18%;
+  }
+
+  .ss-product--scrunchie {
+    width: 38%;
+    height: 56%;
+    top: 29%;
+    left: -5%;
+  }
+
+  .ss-product--iphone {
+    width: 22%;
+    height: 80%;
+    top: 6%;
+  }
+
+  .ss-product--watch {
+    width: 24%;
+    height: 47%;
+    top: 15%;
+    right: 18%;
+  }
+
+  .ss-product--sunscreen {
+    width: 32%;
+    height: 24%;
+    bottom: 16%;
+    right: 4%;
+  }
+
+  .ss-product--perfume {
+    width: 15%;
+    height: 40%;
+    top: 15%;
+    right: 6%;
+  }
+
+  .ss-product--headphones {
+    width: 34%;
+    height: 70%;
+    top: 8%;
+    right: -30%;
+  }
+
+  .ss-product--airpods {
+    width: 12%;
+    height: 26%;
+    right: 2%;
+    top: 50%;
+  }
+}
+
+
+/* ================================================
+   TABLET (max 768px)
+   ================================================ */
+@media (max-width: 768px) {
+  .ss-section {
+    padding: 60px 0 0;
+  }
+
+  .ss-heading {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+  }
+
+  .ss-subtitle {
+    font-size: 16px;
+  }
+
+  .ss-collage {
+    height: 340px;
+    max-width: 600px;
+  }
+
+  .ss-product--tumbler {
+    width: 29%;
+    height: 80%;
+    top: 8%;
+    left: -21%;
+  }
+
+  .ss-product--sunglasses {
+    width: 35%;
+    height: 22%;
+    top: 19%;
+    left: 6%;
+  }
+
+  .ss-product--lipstick {
+    width: 25%;
+    height: 34%;
+    top: 44%;
+    left: 20%;
+  }
+
+  .ss-product--scrunchie {
+    width: 30%;
+    height: 45%;
+    top: 36%;
+    left: 4%;
+  }
+
+  .ss-product--iphone {
+    width: 22%;
+    height: 78%;
+    top: 6%;
+  }
+
+  .ss-product--iphone:hover {
+    transform: translateX(-50%) scale(1.04) translateY(-4px);
+  }
+
+  .ss-product--watch {
+    width: 22%;
+    height: 34%;
+    top: 15%;
+    right: 22%;
+  }
+
+  .ss-product--sunscreen {
+    width: 34%;
+    height: 22%;
+    bottom: 24%;
+    right: 6%;
+  }
+
+  .ss-product--perfume {
+    width: 16%;
+    height: 36%;
+    top: 14%;
+    right: 9%;
+  }
+
+  .ss-product--headphones {
+    width: 43%;
+    height: 73%;
+    top: 13%;
+    right: -34%;
+  }
+
+  .ss-product--airpods {
+    width: 11%;
+    height: 24%;
+    right: 2%;
+    top: 52%;
+  }
+}
+
+/* ================================================
+   MOBILE (max 480px)
+   ================================================ */
+@media (max-width: 480px) {
+  .ss-section {
+    padding: 48px 0 0;
+  }
+
+  .ss-content {
+    gap: 16px;
+  }
+
+  .ss-heading {
+    font-size: 26px;
+    letter-spacing: 0;
+  }
+
+  .ss-subtitle {
+    font-size: 12px;
+  }
+
+  .ss-badge {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .ss-download-btn {
+    font-size: 14px;
+    padding: 8px 10px 8px 16px;
+  }
+
+  .ss-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+  }
+
+  .ss-collage {
+    height: 260px;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .ss-product--tumbler {
+    width: 22%;
+    height: 75%;
+    top: 5%;
+    left: -5%;
+  }
+
+  .ss-product--sunglasses {
+    width: 23%;
+    height: 29%;
+    top: 12%;
+    left: 16%;
+  }
+
+  .ss-product--lipstick {
+    width: 5%;
+    height: 39%;
+    top: 31%;
+    left: 31%;
+  }
+
+  .ss-product--scrunchie {
+    width: 21%;
+    height: 35%;
+    top: 31%;
+    left: 13%;
+  }
+
+  .ss-product--iphone {
+    width: 24%;
+    height: 78%;
+    top: 6%;
+  }
+
+  .ss-product--iphone:hover {
+    transform: translateX(-50%) scale(1.04) translateY(-4px);
+  }
+
+  .ss-product--watch {
+    width: 18%;
+    height: 30%;
+    top: 17%;
+    right: 25%;
+  }
+
+  .ss-product--sunscreen {
+    width: 27%;
+    height: 20%;
+    bottom: 31%;
+    right: 12%;
+  }
+
+  .ss-product--perfume {
+    width: 12%;
+    height: 34%;
+    top: 13%;
+    right: 15%;
+  }
+
+  .ss-product--headphones {
+    width: 28%;
+    height: 58%;
+    top: 13%;
+    right: -15%;
+  }
+
+  .ss-product--airpods {
+    width: 10%;
+    height: 22%;
+    right: 2%;
+    top: 54%;
+  }
+}
+
+/* ================================================
+   SMALL MOBILE (max 360px)
+   ================================================ */
+@media (max-width: 360px) {
+  .ss-heading {
+    font-size: 22px;
+  }
+
+  .ss-subtitle {
+    font-size: 12px;
+  }
+
+  .ss-badge {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .ss-collage {
+    height: 220px;
+    margin-top: 24px;
+  }
+
+
+  .ss-product--tumbler {
+    width: 22%;
+    height: 75%;
+    top: 5%;
+    left: -5%;
+  }
+
+  .ss-product--sunglasses {
+    width: 23%;
+    height: 29%;
+    top: 12%;
+    left: 16%;
+  }
+
+  .ss-product--lipstick {
+    width: 5%;
+    height: 39%;
+    top: 31%;
+    left: 31%;
+  }
+
+  .ss-product--scrunchie {
+    width: 21%;
+    height: 35%;
+    top: 31%;
+    left: 13%;
+  }
+
+  .ss-product--iphone {
+    width: 24%;
+    height: 78%;
+    top: 6%;
+  }
+
+  .ss-product--iphone:hover {
+    transform: translateX(-50%) scale(1.04) translateY(-4px);
+  }
+
+  .ss-product--watch {
+    width: 18%;
+    height: 30%;
+    top: 17%;
+    right: 25%;
+  }
+
+  .ss-product--sunscreen {
+    width: 27%;
+    height: 20%;
+    bottom: 31%;
+    right: 12%;
+  }
+
+  .ss-product--perfume {
+    width: 12%;
+    height: 34%;
+    top: 13%;
+    right: 15%;
+  }
+
+  .ss-product--headphones {
+    width: 28%;
+    height: 58%;
+    top: 13%;
+    right: -15%;
+  }
+
+  .ss-product--airpods {
+    width: 9%;
+    height: 20%;
+    right: 2%;
+    top: 55%;
+  }
+}
+
+
+/* styles/globals.css */
+
+
+.ss-collage-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
