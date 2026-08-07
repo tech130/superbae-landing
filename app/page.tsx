@@ -26,8 +26,9 @@ export default function Home() {
       <Ecosystem />
       <Testimonials />
       <Pricing />
+         <StopSwitching />
       <BannerCTA />
-      <StopSwitching />
+   
       <Footer />
     </main>
   );

@@ -81,8 +81,8 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="px-6 pt-6 md:px-[50px]">
-      <div className="relative isolate w-full overflow-hidden rounded-[50px]">
+    <section className="md:px-[50px] md:pt-6">
+      <div className="relative isolate w-full overflow-hidden rounded-b-[50px] md:rounded-[50px]">
         <video
         src="/assets/Hero/woman-walking-on-a-paradise-beach-at-sunset-in-fuv-2026-01-22-09-43-43-utc.mp4"
         autoPlay
@@ -94,7 +94,7 @@ export default function Hero() {
 
         <div className="relative flex min-h-[550px] flex-col justify-between px-6 py-10 md:min-h-[800px] md:px-[50px] ">
           {/* Top content */}
-          <div className="max-w-[765px]">
+          <div className="max-w-[765px] mt-20 md:mt-12">
             <h1 className="font-display text-[42px] font-[500] leading-none tracking-[-1.08px] text-white md:hidden">
               Become
               <br />
@@ -104,20 +104,20 @@ export default function Hero() {
               <br />
               to be !
             </h1>
-            <h1 className="hidden font-display text-[60px] font-[500] leading-[0.95] tracking-[-1.36px] text-white md:block">
+            <h1 className="hidden font-display text-[60px] font-[500] leading-[0.95] tracking-[-1.36px] text-white md:block ">
               Become the person
               <br />
               you&rsquo;ve always wanted to be
             </h1>
 
-            <div className="mt-6 inline-flex items-center justify-center rounded-[30px] bg-[rgba(42,42,42,0.5)] px-5 py-[5px] backdrop-blur-[10px] md:bg-[rgba(21,21,81,0.25)]">
-              <p className="font-body text-[12px] font-bold tracking-[-0.24px] text-white md:font-[450] md:tracking-normal md:text-[20px]" >
+            <div className="mt-8 inline-flex items-center justify-center rounded-[30px] bg-[rgba(42,42,42,0.5)] px-5 py-[5px] backdrop-blur-[10px] md:bg-[rgba(21,21,81,0.25)]">
+              <p className="font-body text-[10px] font-[400] tracking-[-0.24px] text-white md:font-[400] md:tracking-normal md:text-[22px]" >
                 12 Months . 30 Super Habits . One Community . One Better You.
               </p>
             </div>
 
 
-            <p className="mt-6 max-w-[689px] font-body text-[16px] font-[500] leading-[1.3] tracking-[-0.32px] text-white md:font-[400] md:tracking-[-0.4px] md:text-[20px]">
+            <p className="mt-8 max-w-[689px] font-body text-[16px] font-[400] leading-[1.3] tracking-[-0.32px] text-white md:font-[400] md:tracking-[-0.4px] md:text-[20px]">
               Superbae is a year-long transformation journey for your body, mind,
               relationship, learning and wealth. Built on habits, driven by
               community, designed for real change.
@@ -144,7 +144,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="absolute right-7 top-0 hidden w-[280px] overflow-hidden rounded-[34px] shadow-2xl md:top-1/2 md:right-[57px] md:block md:w-[403px] md:-translate-y-1/2 ">
+          <div className="absolute right-7 top-0 hidden w-[200px] overflow-hidden rounded-[34px] shadow-2xl min-[1025px]:top-1/2 min-[1025px]:right-[57px] min-[1025px]:block min-[1025px]:w-[370px] min-[1025px]:-translate-y-1/2 ">
             <video
               src="/assets/Hero/women-are-dancing-and-enjoying-party-in-club-conce-2026-01-22-02-33-56-utc.mp4"
               autoPlay
@@ -154,15 +154,24 @@ export default function Hero() {
             />
         
             <div className="bg-[#131313]/60 absolute inset-0" />
-            <div className="relative flex h-full min-h-[470px] flex-col justify-between p-[34px]">
-              <p className="font-display text-[24px] font-medium leading-[1.2] text-white">
+            <div className="relative flex h-full min-h-[440px] flex-col justify-between p-[34px]">
+              <p className="font-display text-[30px] font-[200] leading-[1.2] text-white">
                 This is more than a program. It&rsquo;s a movement
               </p>
               <span className="mx-auto flex size-[47px] items-center justify-center rounded-full bg-white/90 text-2xl">
-                ▶
+                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+  <g clipPath="url(#clip0_1_53)">
+    <path d="M23.5 0C17.2674 0 11.2901 2.47589 6.88299 6.88299C2.47589 11.2901 0 17.2674 0 23.5C0 29.7326 2.47589 35.7099 6.88299 40.117C11.2901 44.5241 17.2674 47 23.5 47C29.7326 47 35.7099 44.5241 40.117 40.117C44.5241 35.7099 47 29.7326 47 23.5C47 17.2674 44.5241 11.2901 40.117 6.88299C35.7099 2.47589 29.7326 0 23.5 0ZM32.9588 25.2429L18.5063 32.4692C18.2081 32.6194 17.8766 32.6909 17.543 32.6769C17.2095 32.663 16.8851 32.564 16.6006 32.3893C16.3161 32.2147 16.0809 31.9702 15.9175 31.6792C15.754 31.3881 15.6677 31.0601 15.6667 30.7262V16.2738C15.6643 15.9383 15.7482 15.6078 15.9103 15.3141C16.0723 15.0203 16.3072 14.7731 16.5922 14.5962C16.8772 14.4193 17.203 14.3185 17.5381 14.3037C17.8733 14.2888 18.2067 14.3603 18.5063 14.5112L32.9588 21.7375C33.2846 21.8999 33.5588 22.15 33.7504 22.4596C33.942 22.7692 34.0435 23.1261 34.0435 23.4902C34.0435 23.8543 33.942 24.2112 33.7504 24.5208C33.5588 24.8304 33.2846 25.0805 32.9588 25.2429Z" fill="white"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_1_53">
+      <rect width="47" height="47" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
               </span>
               <div>
-                <p className="mb-4 font-body text-[16px] leading-[1.2] text-white">
+                <p className="mb-4 font-body text-[17px] leading-[1.2] text-white">
                   Join thousands of women transforming their live.
                 </p>
                 <div className="flex items-center gap-3">

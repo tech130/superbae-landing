@@ -65,7 +65,7 @@ export default function Highlights() {
             <div className="absolute inset-0 -z-10 bg-black/0 transition-colors duration-500 ease-in-out group-hover:bg-black/50" />
 
             <div>
-              <p className="font-display text-[28px] font-semibold leading-[1.1] text-white transition-[font-size] duration-500 ease-in-out md:text-[34px] md:group-hover:text-[26px]">
+              <p className="font-display text-[32px] font-[400] leading-[1.1] text-white transition-[font-size] duration-500 ease-in-out md:text-[50px] md:group-hover:text-[26px]">
                 {h.title}
               </p>
 
@@ -92,7 +92,7 @@ export default function Highlights() {
 
             <a
               href="#"
-              className="inline-flex w-fit items-center justify-center rounded-[25px] border-[1px] border-white px-5 py-[10px] font-body text-[16px] font-semibold backdrop-blur-[10px] transition-colors duration-300 bg-[rgba(255,255,255,0.05)] text-white group-hover:bg-white group-hover:text-ink"
+              className="inline-flex w-fit items-center justify-center rounded-[25px] border-[1px] border-white px-5 py-[5px] font-body text-[25px] font-[400] backdrop-blur-[10px] transition-colors duration-300 bg-[rgba(255,255,255,0.05)] text-white group-hover:bg-white group-hover:text-ink"
             >
               {h.cta}
             </a>

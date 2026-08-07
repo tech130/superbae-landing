@@ -8,7 +8,7 @@ const plan = {
   tag: "Yearly",
   badge: "Most Popular",
   name: "Best Value",
-  price: "₹9,999",
+  price: "₹2,499",
   period: "/ Yearly",
   cta: "Join 2027 Cohort",
 };
@@ -46,14 +46,15 @@ export default function Pricing() {
 
         <div className="mt-16 flex justify-center">
           <div
-            className="relative w-full max-w-[360px] rounded-[28px] p-1 shadow-[0_25px_60px_rgba(0,0,0,0.18)]"
+            className="relative w-full max-w-[360px] rounded-[28px] p-1 "
             style={{ background: "url('/assets/bg.png') center/cover no-repeat" }}
           >
-            <div className="relative flex items-center px-3 py-3">
-              <span className="font-body text-[18px] font-semibold text-ink">
+            <div className="relative flex items-center px-4 py-4">
+              <span className="font-body text-[18px] font-[400] text-white">
                 {plan.tag}
               </span>
-              <span className="absolute right-2 rounded-full bg-white px-2 py-[2px] font-body text-[12px] font-semibold">
+              <span className="absolute right-1 rounded-full bg-white px-6 py-[2px] font-body text-[12px] font-semibold" 
+              style={{marginRight:"-17px"}}>
                 <span
                   style={{
                     background: "linear-gradient(90deg, #FC7586 0%, #FA6398 100%)",
@@ -70,12 +71,12 @@ export default function Pricing() {
             <div className="rounded-[24px] bg-white p-6 text-left">
               <div className="size-[60px] rounded-2xl bg-[#131313]" style={{ boxShadow: "0 5.067px 5.067px 0 rgba(0,0,0,0.40), 0 5.067px 5.067px 0 rgba(255,255,255,0.25) inset" }} />
 
-              <p className="mt-5 font-body text-[20px] font-semibold text-ink">
+              <p className="mt-5 font-body text-[20px] font-[400] text-ink">
                 {plan.name}
               </p>
 
               <div className="mt-3 flex items-end gap-2">
-                <span className="font-display text-[48px] font-bold leading-none text-ink">
+                <span className="font-display text-[48px] font-semibold leading-none text-ink">
                   {plan.price}
                 </span>
                 <span className="mb-1 font-body text-[16px] text-ink/50">
@@ -96,7 +97,7 @@ export default function Pricing() {
 
               <a
                 href="#join"
-                className="mt-8 block bg-[#131313] py-[18px] text-center font-body text-[18px] font-bold text-white"
+                className="mt-8 block bg-[#131313] py-[10px] text-center font-body text-[30px] font-[450] text-white"
                 style={{
                   borderRadius: "31.667px",
                   boxShadow:
