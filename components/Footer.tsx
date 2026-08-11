@@ -60,12 +60,74 @@ function BehanceIcon() {
   );
 }
 
+function FacebookIcon() {
+  return (
+    <svg className="size-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="9" stroke="white" strokeWidth="1.6" />
+      <path
+        d="M13.5 9.5H15V7.2C14.6 7.15 13.9 7 13.1 7C11.4 7 10.3 8.1 10.3 10V11.7H8.5V14.2H10.3V20H12.9V14.2H14.7L15 11.7H12.9V10.3C12.9 9.7 13.1 9.5 13.5 9.5Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
+
+function YoutubeIcon() {
+  return (
+    <svg className="size-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="5" width="20" height="14" rx="4" stroke="white" strokeWidth="1.6" />
+      <path d="M10.5 9.5L15 12L10.5 14.5V9.5Z" fill="white" />
+    </svg>
+  );
+}
+
+function ThreadsIcon() {
+  return (
+    <svg className="size-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 21c-4.5 0-7-2.7-7-8.5S7.5 3 12 3c3.6 0 5.8 1.8 6.3 4.6"
+        stroke="white"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M9.5 12.2c1.8-.5 4.3-.5 5.6.6 1.3 1.1 1.1 3.2-.6 4-1.6.8-3.8.3-4.3-1.2-.5-1.5.6-3 2.3-3.4 1.9-.5 4 .1 4.9 1.6"
+        stroke="white"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function SnapchatIcon() {
+  return (
+    <svg className="size-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 3C8.5 3 6.8 5.6 6.8 8.4C6.8 9.4 6.9 10.3 7 11C6.3 11.3 5.5 11.6 5 11.9C4.5 12.2 4.6 12.8 5.1 13C5.7 13.3 6.4 13.5 6.9 13.6C6.8 14 6.6 14.5 6.2 14.9C5.8 15.3 5.2 15.5 4.7 15.6C4.3 15.7 4.2 16.2 4.6 16.5C5.3 17 6.3 17.3 7.1 17.4C7.3 17.9 7.7 18.7 8.6 19.2C9.5 19.7 10.7 20 12 20C13.3 20 14.5 19.7 15.4 19.2C16.3 18.7 16.7 17.9 16.9 17.4C17.7 17.3 18.7 17 19.4 16.5C19.8 16.2 19.7 15.7 19.3 15.6C18.8 15.5 18.2 15.3 17.8 14.9C17.4 14.5 17.2 14 17.1 13.6C17.6 13.5 18.3 13.3 18.9 13C19.4 12.8 19.5 12.2 19 11.9C18.5 11.6 17.7 11.3 17 11C17.1 10.3 17.2 9.4 17.2 8.4C17.2 5.6 15.5 3 12 3Z"
+        stroke="white"
+        strokeWidth="1.3"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+// href: "#" is a placeholder — swap in the real profile URL once it's available.
 const socials = [
-  { label: "X", icon: <XIcon /> },
-  { label: "Instagram", icon: <InstagramIcon /> },
-  { label: "LinkedIn", icon: <LinkedInIcon /> },
-  { label: "Pinterest", icon: <PinterestIcon /> },
-  { label: "Behance", icon: <BehanceIcon /> },
+  { label: "X", href: "https://x.com/SpaceandBeauty", icon: <XIcon /> },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/thesuperbae?igsh=MWh4ZmkwNGd2d3VxbA==",
+    icon: <InstagramIcon />,
+  },
+  { label: "Facebook", href: "https://www.facebook.com/share/1CP71vuzL5/", icon: <FacebookIcon /> },
+  { label: "LinkedIn", href: "#", icon: <LinkedInIcon /> },
+  { label: "Pinterest", href: "#", icon: <PinterestIcon /> },
+  { label: "YouTube", href: "#", icon: <YoutubeIcon /> },
+  { label: "Threads", href: "#", icon: <ThreadsIcon /> },
+  { label: "Snapchat", href: "#", icon: <SnapchatIcon /> },
 ];
 
 export default function Footer() {
@@ -161,15 +223,18 @@ export default function Footer() {
           <p className="font-body text-[14px] text-ink/60">
             © {new Date().getFullYear()} SuperBae. All rights reserved.
           </p>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
             {socials.map((s) => (
-              <span
+              <a
                 key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={s.label}
-                className="flex size-[37px] items-center justify-center rounded-full bg-[#131313]"
+                className="flex size-[37px] items-center justify-center rounded-full bg-[#131313] transition-opacity hover:opacity-80"
               >
                 {s.icon}
-              </span>
+              </a>
             ))}
           </div>
         </div>

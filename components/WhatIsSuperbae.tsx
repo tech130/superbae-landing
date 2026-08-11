@@ -53,7 +53,7 @@ const cards = [
 
 function CardImage({ card }: { card: (typeof cards)[number] }) {
   return (
-    <div className="relative h-[230px] w-full overflow-hidden rounded-[18px] bg-ink/5 shadow-[4px_8px_12px_0px_rgba(0,0,0,0.16)]">
+    <div className="relative h-[230px] w-full overflow-hidden rounded-[18px]">
       <Image
         src={card.src}
         alt={card.title.replace("\n", " ")}
@@ -71,12 +71,12 @@ function CardImage({ card }: { card: (typeof cards)[number] }) {
 
 export default function WhatIsSuperbae() {
   return (
-    <section className="px-6 py-12 md:px-[45px] ">
+    <section className="px-6 py-12 md:px-[50px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[58px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[48px] md:tracking-[1.2px]">
           What is Superbae
         </h2>
-        <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[19px]">
+        <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">
           Everything works together to transform you form the blah blah....
         </p>
 

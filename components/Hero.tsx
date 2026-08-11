@@ -111,7 +111,7 @@ export default function Hero() {
             </h1>
 
             <div className="mt-8 inline-flex items-center justify-center rounded-[30px] bg-[rgba(42,42,42,0.5)] px-5 py-[5px] backdrop-blur-[10px] md:bg-[rgba(21,21,81,0.25)]">
-              <p className="font-body text-[10px] font-[400] tracking-[-0.24px] text-white md:font-[400] md:tracking-normal md:text-[22px]" >
+              <p className="font-body text-[10px] font-[400] tracking-[-0.24px] text-white md:font-[300] md:tracking-normal md:text-[19px]" >
                 12 Months . 30 Super Habits . One Community . One Better You.
               </p>
             </div>

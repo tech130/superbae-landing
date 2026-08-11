@@ -48,12 +48,18 @@ function CheckIcon() {
 
 export default function Highlights() {
   return (
-    <section className="px-6 py-16 md:py-[20px]">
-      <div className="mx-auto flex max-w-[1440px] flex-wrap justify-center gap-6">
+    <section className="px-6 py-0 md:px-[50px] md:py-[20px]">
+      <div className="mx-auto flex max-w-[1440px] flex-wrap justify-center gap-10 md:gap-5">
         {highlights.map((h) => (
           <div
             key={h.title}
-            className="group relative flex h-[470px] w-full max-w-[420px] flex-col justify-between overflow-hidden rounded-[24px] p-6"
+            className="group relative flex h-[380px] w-full max-w-[420px] flex-col justify-between overflow-hidden rounded-[24px] p-6 h-[380px]
+
+    sm:h-[400px]
+
+    md:h-[420px]
+
+    lg:h-[450px]"
           >
             <Image
               src={h.image}
@@ -65,12 +71,30 @@ export default function Highlights() {
             <div className="absolute inset-0 -z-10 bg-black/0 transition-colors duration-500 ease-in-out group-hover:bg-black/50" />
 
             <div>
-              <p className="font-display text-[32px] font-[400] leading-[1.1] text-white transition-[font-size] duration-500 ease-in-out md:text-[50px] md:group-hover:text-[26px]">
+              <p className="font-display text-[32px] font-[400] leading-[1.1] text-white transition-[font-size] duration-500 ease-in-out sm:text-[38px]
+
+        md:text-[42px]
+        md:group-hover:text-[28px]
+
+        lg:text-[50px] md:group-hover:text-[26px]">
                 {h.title}
               </p>
 
               {/* Always visible on mobile (no hover on touch); reveals on hover from md up */}
-              <div className="mt-3 grid grid-rows-[1fr] opacity-100 transition-all duration-500 ease-in-out md:mt-0 md:grid-rows-[0fr] md:opacity-0 md:group-hover:mt-3 md:group-hover:grid-rows-[1fr] md:group-hover:opacity-100">
+              <div className="mt-3
+        grid
+        grid-rows-[1fr]
+        opacity-100
+        transition-all
+        duration-500
+        ease-in-out
+
+        lg:mt-0
+        lg:grid-rows-[0fr]
+        lg:opacity-0
+        lg:group-hover:mt-3
+        lg:group-hover:grid-rows-[1fr]
+        lg:group-hover:opacity-100">
                 <div className="overflow-hidden">
                   <p className="font-body text-[15px] text-white/80">
                     {h.subtitle}

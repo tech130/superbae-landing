@@ -30,27 +30,29 @@ function MonthPill({ m }: { m: Month }) {
   );
 }
 
-function MonthNode({ m, size = 60 }: { m: Month; size?: number }) {
-  const ratio = size / 60;
+// Sized purely with responsive Tailwind classes (52px mobile → 60px from md
+// → 68px from the desktop breakpoint) instead of a JS size prop — the rings
+// below are percentages of the node itself, so they scale for free with it.
+function MonthNode({ m }: { m: Month }) {
   return (
-    <div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
+    <div className="relative flex size-[52px] shrink-0 items-center justify-center md:size-[60px] min-[1025px]:size-[68px]">
       <div
-        className="absolute rounded-full"
-        style={{ width: size, height: size, background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
+        className="absolute inset-0 rounded-full"
+        style={{ background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
       />
       <div
         className="absolute rounded-full"
-        style={{ width: 49.88 * ratio, height: 49.88 * ratio, background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
+        style={{ width: "83.13%", height: "83.13%", background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
       />
       <div
         className="absolute rounded-full"
-        style={{ width: 35.422 * ratio, height: 35.422 * ratio, background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
+        style={{ width: "59.04%", height: "59.04%", background: m.color, opacity: 0.4, boxShadow: "0 2.892px 2.892px 0 rgba(0,0,0,0.25)" }}
       />
       <div
         className="absolute rounded-full bg-white"
         style={{
-          width: 26 * ratio,
-          height: 26 * ratio,
+          width: "43.33%",
+          height: "43.33%",
           boxShadow: "0 4px 4px 0 rgba(0,0,0,0.25) inset, 0 2.892px 2.892px 0 rgba(0,0,0,0.25)",
         }}
       />
@@ -104,17 +106,17 @@ function connectorPath(side: "left" | "right", y1: number, y2: number) {
 
 export default function YearAtSuperbae() {
   return (
-    <section className="px-6 py-16 md:py-[70px]">
+    <section className="px-6 py-6 md:px-[50px] md:py-[30px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[58px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[48px] md:tracking-[1.2px]">
           Year at Superbae
         </h2>
-        <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[19px]">
+        <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">
           A new shift every month. A new you everyday.
         </p>
 
         <div className="mt-16 hidden md:block">
-          <div className="mx-auto w-[92%]">
+          <div className="mx-auto w-[100%]">
             {/* Row 1: theme + month pill for odd months (Jan, Mar, May…), sit above the line */}
             <div className="grid grid-cols-12">
               {months.map((m, i) => (
@@ -172,7 +174,7 @@ export default function YearAtSuperbae() {
             own px-6 padding to bleed edge-to-edge — the loop connectors need
             to reach the true screen edge to match the reference design,
             not stop at the padded content column. */}
-        <div className="relative left-1/2 my-12 w-screen md:hidden" style={{ transform: "translateX(-50%)" }}>
+        <div className="relative left-1/2 my-3 w-screen md:hidden" style={{ transform: "translateX(-50%)" }}>
           <div className="relative mx-auto w-full" style={{ maxWidth: 480, aspectRatio: `${VW} / ${VH}` }}>
           <svg
             viewBox={`0 0 ${VW} ${VH}`}
@@ -244,7 +246,7 @@ export default function YearAtSuperbae() {
                     className="absolute z-10"
                     style={{ left: pct(x, VW), top: pct(y, VH), transform: "translate(-50%, -50%)" }}
                   >
-                    <MonthNode m={m} size={52} />
+                    <MonthNode m={m} />
                   </div>
                   <div
                     className="absolute z-10 flex flex-col items-center gap-1"

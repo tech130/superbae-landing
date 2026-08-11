@@ -58,12 +58,12 @@ export default function ThirtySuperHabits() {
           </p>
         </div>
 
-        <a
+        {/* <a
           href="#habits"
           className="rounded-[22px] border border-black bg-[#2a2a2a] px-5 py-[10px] font-body text-[18px] font-semibold text-white drop-shadow-[0px_5px_2.5px_rgba(0,0,0,0.25)]"
         >
           Explore all 30 Habits
-        </a>
+        </a> */}
 
         {/* Mobile: static 2-column grid — same design as desktop, image in the background with a lightly blurred glass panel on top */}
         <div className="mt-10 grid w-full grid-cols-2 gap-3 md:hidden">

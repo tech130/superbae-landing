@@ -40,18 +40,18 @@ const tiles = [
 
 export default function Ecosystem() {
   return (
-    <section className="px-6 py-16 md:px-[75px] md:py-[70px]">
+    <section className="px-6 py-16 md:px-[20px] md:py-[30px] lg:py-[70px] lg:px-[20px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[58px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[48px] md:tracking-[1.2px]">
           The SuperBae Ecosystem
         </h2>
-        <p className="mx-auto  max-w-2xl font-body text-[16px] text-ink/60 md:text-[19px]">
+        <p className="mx-auto  max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">
           Powerful tools. Real support.
           <br />
           Everything you need to transform your life.
         </p>
 
-        <div className="mt-10 grid grid-cols-2 auto-rows-[180px] gap-2 md:mt-16 md:grid-cols-4 md:auto-rows-[300px]">
+        <div className="mt-10 grid grid-cols-2 auto-rows-[180px] gap-2 md:mt-16 md:grid-cols-4 md:auto-rows-[200px] lg:auto-rows-[300px]">
           {tiles.map((tile) => (
             <div
               key={tile.title}
@@ -67,10 +67,10 @@ export default function Ecosystem() {
               />
               {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-transparent to-black/50" /> */}
 
-              <p className="font-display text-[20px] font-semibold text-white">
+              <p className="font-display text-[20px] font-[500] text-white md:text-[18px] lg:text-[26px]">
                 {tile.title}
                 {tile.suffix && (
-                  <span className="ml-1 font-body text-[14px] font-normal text-white/80">
+                  <span className="ml-1 font-body text-[14px] font-normal text-white/80 md:text-[16px]">
                     {tile.suffix}
                   </span>
                 )}
