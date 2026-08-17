@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Transformation Program", href: "#" },
-  { label: "30 Super Habits", href: "#habits" },
+  { label: "Transformation Program", href: "#habits" },
+  // { label: "30 Super Habits", href: "#habits" },
   { label: "App", href: "#app" },
   { label: "Planner", href: "#planner" },
   { label: "Community", href: "#community" },
