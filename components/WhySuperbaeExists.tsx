@@ -1,10 +1,82 @@
+function RoadmapIcon() {
+  return (
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60" fill="none">
+  <path d="M6.25195 23.749H53.752M6.25195 23.749V51.249C6.25195 51.9121 6.51535 52.548 6.98419 53.0168C7.45303 53.4856 8.08891 53.749 8.75195 53.749H51.252C51.915 53.749 52.5509 53.4856 53.0197 53.0168C53.4886 52.548 53.752 51.9121 53.752 51.249V23.749M6.25195 23.749V12.499C6.25195 11.836 6.51535 11.2001 6.98419 10.7313C7.45303 10.2624 8.08891 9.99902 8.75195 9.99902H51.252C51.915 9.99902 52.5509 10.2624 53.0197 10.7313C53.4886 11.2001 53.752 11.836 53.752 12.499V23.749" stroke="#6437E5" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M20.0039 38.748L27.5039 46.248L42.5039 31.248" stroke="#6437E5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20.0039 6.24902V16.249M40.0039 6.24902V16.249" stroke="#6437E5" stroke-width="5" stroke-linecap="round"/>
+</svg>
+  );
+}
+
+function CommunityIcon() {
+  return (
+    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M39.5412 28.8752C37.5408 30.8755 34.8277 31.9993 31.9987 31.9993C29.1697 31.9993 26.4566 30.8755 24.4562 28.8752C22.4558 26.8748 21.332 24.1617 21.332 21.3327C21.332 18.5037 22.4558 15.7906 24.4562 13.7902C26.4566 11.7898 29.1697 10.666 31.9987 10.666C34.8277 10.666 37.5408 11.7898 39.5412 13.7902C41.5416 15.7906 42.6654 18.5037 42.6654 21.3327C42.6654 24.1617 41.5416 26.8748 39.5412 28.8752Z"
+        stroke="#E96F03"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.332 53.3313V50.6647C13.3314 47.5153 14.1276 44.4169 15.6465 41.658C17.1655 38.8991 19.3578 36.5693 22.0193 34.8856C24.6809 33.2019 27.7252 32.219 30.8688 32.0284C34.0124 31.8377 37.1532 32.4456 39.9987 33.7953M44.3587 43.7713L47.1294 37.8967C47.2043 37.7287 47.3263 37.5861 47.4806 37.486C47.6348 37.3859 47.8148 37.3327 47.9987 37.3327C48.1826 37.3327 48.3625 37.3859 48.5168 37.486C48.6711 37.5861 48.7931 37.7287 48.868 37.8967L51.6414 43.7713L57.836 44.7207C58.6307 44.8407 58.9454 45.8647 58.3694 46.4513L53.8894 51.0193L54.9454 57.4753C55.0814 58.3047 54.252 58.9367 53.54 58.5447L47.9987 55.4967L42.4574 58.5447C41.7454 58.9367 40.916 58.3047 41.052 57.478L42.108 51.0193L37.628 46.4513C37.052 45.8647 37.3667 44.8407 38.1614 44.718L44.3587 43.7713Z"
+        stroke="#E96F03"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function HabitIcon() {
+  return (
+    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M30 9.375C28.7568 9.375 27.5645 9.86886 26.6854 10.7479C25.8064 11.627 25.3125 12.8193 25.3125 14.0625C25.3125 15.3057 25.8064 16.498 26.6854 17.3771C27.5645 18.2561 28.7568 18.75 30 18.75C31.2432 18.75 32.4355 18.2561 33.3146 17.3771C34.1936 16.498 34.6875 15.3057 34.6875 14.0625C34.6875 12.8193 34.1936 11.627 33.3146 10.7479C32.4355 9.86886 31.2432 9.375 30 9.375ZM21.5625 14.0625C21.5625 11.8247 22.4514 9.67862 24.0338 8.09629C25.6161 6.51395 27.7622 5.625 30 5.625C32.2378 5.625 34.3839 6.51395 35.9662 8.09629C37.5485 9.67862 38.4375 11.8247 38.4375 14.0625C38.4375 16.3003 37.5485 18.4464 35.9662 20.0287C34.3839 21.6111 32.2378 22.5 30 22.5C27.7622 22.5 25.6161 21.6111 24.0338 20.0287C22.4514 18.4464 21.5625 16.3003 21.5625 14.0625ZM11.25 15C10.2554 15 9.30161 15.3951 8.59835 16.0984C7.89509 16.8016 7.5 17.7554 7.5 18.75C7.5 19.7446 7.89509 20.6984 8.59835 21.4016C9.30161 22.1049 10.2554 22.5 11.25 22.5C12.2446 22.5 13.1984 22.1049 13.9017 21.4016C14.6049 20.6984 15 19.7446 15 18.75C15 17.7554 14.6049 16.8016 13.9017 16.0984C13.1984 15.3951 12.2446 15 11.25 15ZM3.75 18.75C3.75 16.7609 4.54018 14.8532 5.9467 13.4467C7.35322 12.0402 9.26088 11.25 11.25 11.25C13.2391 11.25 15.1468 12.0402 16.5533 13.4467C17.9598 14.8532 18.75 16.7609 18.75 18.75C18.75 20.7391 17.9598 22.6468 16.5533 24.0533C15.1468 25.4598 13.2391 26.25 11.25 26.25C9.26088 26.25 7.35322 25.4598 5.9467 24.0533C4.54018 22.6468 3.75 20.7391 3.75 18.75ZM45 18.75C45 17.7554 45.3951 16.8016 46.0984 16.0984C46.8016 15.3951 47.7554 15 48.75 15C49.7446 15 50.6984 15.3951 51.4016 16.0984C52.1049 16.8016 52.5 17.7554 52.5 18.75C52.5 19.7446 52.1049 20.6984 51.4016 21.4016C50.6984 22.1049 49.7446 22.5 48.75 22.5C47.7554 22.5 46.8016 22.1049 46.0984 21.4016C45.3951 20.6984 45 19.7446 45 18.75ZM48.75 11.25C46.7609 11.25 44.8532 12.0402 43.4467 13.4467C42.0402 14.8532 41.25 16.7609 41.25 18.75C41.25 20.7391 42.0402 22.6468 43.4467 24.0533C44.8532 25.4598 46.7609 26.25 48.75 26.25C50.7391 26.25 52.6468 25.4598 54.0533 24.0533C55.4598 22.6468 56.25 20.7391 56.25 18.75C56.25 16.7609 55.4598 14.8532 54.0533 13.4467C52.6468 12.0402 50.7391 11.25 48.75 11.25ZM15.9375 30.9375C15.9375 30.52 15.9706 30.1131 16.0369 29.7169L7.22437 32.0775C6.02374 32.3996 5.0002 33.1854 4.37889 34.262C3.75757 35.3387 3.58936 36.6181 3.91125 37.8187L5.61 44.1562C6.02004 45.6875 6.74906 47.1148 7.74925 48.3446C8.74945 49.5744 9.99826 50.5789 11.4138 51.2924C12.8294 52.0058 14.3797 52.412 15.9633 52.4845C17.5468 52.5569 19.1277 52.2938 20.6025 51.7125C19.5889 50.8027 18.7129 49.7504 18.0019 48.5887C16.1268 48.9781 14.1738 48.6355 12.5433 47.6311C10.9128 46.6267 9.72823 45.0367 9.2325 43.1869L7.53375 36.8494C7.50169 36.7304 7.49338 36.6064 7.5093 36.4842C7.52522 36.3621 7.56505 36.2443 7.62652 36.1375C7.68798 36.0308 7.76988 35.9372 7.86753 35.8621C7.96518 35.7871 8.07667 35.732 8.19562 35.7L15.9375 33.6262V30.9375ZM40.6069 52.1119C40.1959 52.0024 39.7915 51.8697 39.3956 51.7144C40.4099 50.8047 41.2865 49.7524 41.9981 48.5906C43.8729 48.9789 45.8251 48.6355 47.4549 47.6308C49.0846 46.6261 50.2684 45.0362 50.7637 43.1869L52.4606 36.8475C52.5248 36.6076 52.4912 36.352 52.3671 36.1368C52.243 35.9217 52.0386 35.7646 51.7987 35.7L44.0625 33.6262V30.9375C44.0625 30.5225 44.0294 30.1163 43.9631 29.7188L52.77 32.0775C53.9706 32.3996 54.9942 33.1854 55.6155 34.262C56.2368 35.3387 56.405 36.6181 56.0831 37.8187L54.3844 44.1562C53.6123 47.0382 51.727 49.4954 49.1432 50.9874C46.5595 52.4793 43.4889 52.8838 40.6069 52.1119ZM23.4375 26.25C22.1943 26.25 21.002 26.7439 20.1229 27.6229C19.2439 28.502 18.75 29.6943 18.75 30.9375V41.25C18.75 44.2337 19.9353 47.0952 22.045 49.205C24.1548 51.3147 27.0163 52.5 30 52.5C32.9837 52.5 35.8452 51.3147 37.955 49.205C40.0647 47.0952 41.25 44.2337 41.25 41.25V30.9375C41.25 29.6943 40.7561 28.502 39.8771 27.6229C38.998 26.7439 37.8057 26.25 36.5625 26.25H23.4375ZM22.5 30.9375C22.5 30.6889 22.5988 30.4504 22.7746 30.2746C22.9504 30.0988 23.1889 30 23.4375 30H36.5625C36.8111 30 37.0496 30.0988 37.2254 30.2746C37.4012 30.4504 37.5 30.6889 37.5 30.9375V41.25C37.5 43.2391 36.7098 45.1468 35.3033 46.5533C33.8968 47.9598 31.9891 48.75 30 48.75C28.0109 48.75 26.1032 47.9598 24.6967 46.5533C23.2902 45.1468 22.5 43.2391 22.5 41.25V30.9375Z"
+        fill="#B32181"
+      />
+    </svg>
+  );
+}
+
+function RewardIcon() {
+  return (
+    <svg width="40" height="40" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_116_772)">
+        <path
+          d="M45.007 38.5119C48.9903 34.5286 51.2281 29.1261 51.2281 23.4929C51.2281 17.8597 48.9903 12.4573 45.007 8.47398C41.0237 4.49071 35.6212 2.25293 29.988 2.25293C24.3548 2.25293 18.9524 4.49071 14.9691 8.47398C10.9858 12.4573 8.74805 17.8597 8.74805 23.4929C8.74805 29.1261 10.9858 34.5286 14.9691 38.5119C18.9524 42.4952 24.3548 44.7329 29.988 44.7329C35.6212 44.7329 41.0237 42.4952 45.007 38.5119Z"
+          stroke="#2170D7"
+          strokeWidth="4.28571"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M11.5902 33.9121L2.14453 50.275L12.3488 47.5407L15.0874 57.745L23.2817 43.5507M48.4131 33.9121L57.8588 50.275L47.6502 47.5407L44.916 57.745L36.7217 43.5507M30.8588 11.9607L33.786 17.8493C33.8495 17.9989 33.9524 18.1285 34.0837 18.2243C34.215 18.3202 34.3698 18.3786 34.5317 18.3936L41.0331 19.3793C41.2192 19.4031 41.3946 19.4794 41.5387 19.5994C41.6829 19.7194 41.7898 19.8781 41.847 20.0567C41.9041 20.2354 41.9091 20.4266 41.8613 20.608C41.8136 20.7894 41.7151 20.9534 41.5774 21.0807L36.7731 25.6407C36.7011 25.7767 36.6634 25.9283 36.6634 26.0821C36.6634 26.236 36.7011 26.3876 36.7731 26.5236L37.6945 32.9864C37.7345 33.1737 37.7191 33.3686 37.6501 33.5473C37.5811 33.7259 37.4616 33.8806 37.3061 33.9925C37.1507 34.1043 36.966 34.1684 36.7747 34.177C36.5833 34.1855 36.3937 34.1382 36.2288 34.0407L30.4431 30.9807C30.2936 30.9133 30.1314 30.8784 29.9674 30.8784C29.8034 30.8784 29.6412 30.9133 29.4917 30.9807L23.706 34.0407C23.5413 34.1356 23.3527 34.1808 23.1629 34.1709C22.9731 34.1611 22.7902 34.0966 22.6362 33.9851C22.4822 33.8737 22.3637 33.7202 22.295 33.543C22.2263 33.3658 22.2102 33.1725 22.2488 32.9864L23.3374 26.5236C23.3846 26.3738 23.3937 26.2146 23.3637 26.0604C23.3338 25.9062 23.2658 25.7619 23.166 25.6407L18.3702 21.0421C18.2414 20.9132 18.1508 20.7511 18.1085 20.5738C18.0662 20.3965 18.0739 20.211 18.1307 20.0378C18.1876 19.8646 18.2913 19.7106 18.4304 19.5928C18.5696 19.4751 18.7386 19.3982 18.9188 19.3707L25.416 18.4279C25.5778 18.4129 25.7326 18.3544 25.8639 18.2586C25.9952 18.1628 26.0981 18.0332 26.1617 17.8836L29.0888 11.995C29.1667 11.8279 29.29 11.6859 29.4445 11.5853C29.5991 11.4848 29.7788 11.4295 29.9631 11.426C30.1475 11.4224 30.3292 11.4706 30.4875 11.5651C30.6458 11.6597 30.7745 11.7967 30.8588 11.9607Z"
+          stroke="#2170D7"
+          strokeWidth="4.28571"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_116_772">
+          <rect width="60" height="60" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
 const pillars = [
   {
     badge: "No More Starting Over",
     badgeFrom: "#774af9",
     badgeTo: "#5226d3",
-    cardBg: "from-[#e8dafe] to-white",
-    body: "A Clear roadmap\nfor 365 days",
+    borderColor: "#e2d4fb",
+    body: "A Clear Roadmap\nFor 365 Days",
+    icon: <RoadmapIcon />,
+    dashedIconBox: false,
     boxShadow:
       "0 24.072px 32.096px 0 rgba(96, 51, 225, 0.30), 0 -3.21px 3.21px 0 rgba(0, 0, 0, 0.25) inset, 0 4.814px 4.814px 0 rgba(255, 255, 255, 0.25) inset",
   },
@@ -12,8 +84,11 @@ const pillars = [
     badge: "Accountability That Keeps You Going",
     badgeFrom: "#f643b9",
     badgeTo: "#a11872",
-    cardBg: "from-[#ffddf3] to-white",
-    body: "Communities,\nchallenges, Real\nSupport",
+    borderColor: "#fcd9f0",
+    body: "Communities,\nChallenges, Real\nSupport",
+    
+    icon: <HabitIcon />,
+    dashedIconBox: false,
     boxShadow:
       "0 24.072px 32.096px 0 rgba(246, 67, 185, 0.30), 0 -3.21px 3.21px 0 rgba(0, 0, 0, 0.25) inset, 0 4.814px 4.814px 0 rgba(255, 255, 255, 0.25) inset",
   },
@@ -21,17 +96,22 @@ const pillars = [
     badge: "Habits That Create Identity",
     badgeFrom: "#ff7700",
     badgeTo: "#df6a04",
-    cardBg: "from-[#ffeddd] to-white",
-    body: "Small daily actions,\nbig life shifts",
+    borderColor: "#fce3c9",
+    body: "Small Daily Actions,\nBig Life Shifts",
+        icon: <CommunityIcon />,
+
+    dashedIconBox: false,
     boxShadow:
-      "0 24.072px 32.096px 0 rgba(255, 237, 221, 0.30), 0 -3.21px 3.21px 0 rgba(0, 0, 0, 0.25) inset, 0 4.814px 4.814px 0 rgba(255, 255, 255, 0.25) inset",
+      "0 24.072px 32.096px 0 rgba(255, 119, 0, 0.30), 0 -3.21px 3.21px 0 rgba(0, 0, 0, 0.25) inset, 0 4.814px 4.814px 0 rgba(255, 255, 255, 0.25) inset",
   },
   {
     badge: "Rewards That Celebrates You",
     badgeFrom: "#3d91ff",
     badgeTo: "#0d58ba",
-    cardBg: "from-[#eaf3ff] to-white",
-    body: "Milestone, badges,\nrewards & unforgettable\nmemories",
+    borderColor: "#d3e6fd",
+    body: "Milestone, Badges,\nRewards & Unforgettable\nMemories",
+    icon: <RewardIcon />,
+    dashedIconBox: false,
     boxShadow:
       "0 24.072px 32.096px 0 rgba(61, 145, 255, 0.30), 0 -3.21px 3.21px 0 rgba(0, 0, 0, 0.25) inset, 0 4.814px 4.814px 0 rgba(255, 255, 255, 0.25) inset",
   },
@@ -41,7 +121,7 @@ export default function WhySuperbaeExists() {
   return (
     <section className="px-6 py-6 md:px-[40px] md:py-[30px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[48px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[45px] md:tracking-[1.2px]">
           Why Superbae Exists
         </h2>
         <p className="mx-auto  max-w-2xl font-body  font-[400] text-[16px] text-ink/60 md:text-[16px]">
@@ -50,26 +130,36 @@ export default function WhySuperbaeExists() {
           stay consistent for the entire years.
         </p>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-4 md:flex-nowrap">
+        <div className="mt-16 flex flex-wrap justify-center gap-x-6 gap-y-14 md:mt-20 md:flex-nowrap md:gap-5">
           {pillars.map((pillar) => (
-            <div
-              key={pillar.badge}
-              className="relative w-full max-w-[329px] rounded-[44px] border border-black/6 bg-white p-1"
-            >
-              <div
-                className={`flex h-[300px] flex-col items-center rounded-[40px] bg-gradient-to-b p-5 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.2)] md:h-[400px] ${pillar.cardBg}`}
+            <div key={pillar.badge} className="relative w-full max-w-[300px]">
+              {/* Badge pill — overlaps the card's top edge */}
+              <span
+                className="absolute left-1/2 top-0 z-10 flex min-h-[65px] w-[88%] max-w-[266px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[3px] px-4 text-center font-display text-[13px] font-[600] leading-tight text-white shadow-[inset_0px_-3px_3px_0px_rgba(0,0,0,0.25),inset_0px_5px_5px_0px_rgba(255,255,255,0.25)] md:text-[15px]"
+                style={{
+                  borderColor: pillar.badgeFrom,
+                  background: `radial-gradient(circle, ${pillar.badgeFrom}, ${pillar.badgeTo})`,
+                  boxShadow: pillar.boxShadow,
+                }}
               >
-                <span
-                  className="mt-6 flex min-h-[64px] w-full max-w-[273px] items-center justify-center rounded-[32px] border-[3px] px-4 py-3 text-center font-display text-[16px] font-bold text-white shadow-[inset_0px_-3px_3px_0px_rgba(0,0,0,0.25),inset_0px_5px_5px_0px_rgba(255,255,255,0.25)] md:text-[18px]"
-                  style={{
-                    borderColor: pillar.badgeFrom,
-                    background: `radial-gradient(circle, ${pillar.badgeFrom}, ${pillar.badgeTo})`,
-                    boxShadow: pillar.boxShadow
-                  }}
+                {pillar.badge}
+              </span>
+
+              <div
+                className="flex min-h-[160px] items-center gap-4 rounded-[26px] border bg-white px-5 pb-6 pt-9 text-left shadow-[0_16px_28px_-10px_rgba(0,0,0,0.12)]"
+                style={{ borderColor: pillar.borderColor }}
+              >
+                <div
+                  className={
+                    pillar.dashedIconBox
+                      ? "flex  shrink-0 items-center justify-center"
+                      : "flex shrink-0 items-center justify-center"
+                  }
+                  style={pillar.dashedIconBox ? { borderColor: pillar.badgeFrom } : undefined}
                 >
-                  {pillar.badge}
-                </span>
-                <p className="mt-auto whitespace-pre-line pb-6 font-display flex items-center justify-center text-center text-[22px] font-[500] leading-[1.3] text-ink md:items-start md:justify-start md:text-left md:text-[22px]">
+                  {pillar.icon}
+                </div>
+                <p className="whitespace-pre-line font-display text-[17px] font-[400] leading-snug text-ink">
                   {pillar.body}
                 </p>
               </div>

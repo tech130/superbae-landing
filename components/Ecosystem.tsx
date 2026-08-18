@@ -42,7 +42,7 @@ export default function Ecosystem() {
   return (
     <section className="px-6 py-16 md:px-[20px] md:py-[30px] lg:py-[70px] lg:px-[20px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[48px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[45px] md:tracking-[1.2px]">
           The SuperBae Ecosystem
         </h2>
         <p className="mx-auto  max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">

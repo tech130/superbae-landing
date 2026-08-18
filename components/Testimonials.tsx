@@ -79,7 +79,7 @@ export default function Testimonials() {
   return (
     <section className="overflow-hidden px-6 py-16 md:px-[50px] md:py-[10px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[32px] font-medium tracking-[0.64px] text-ink md:text-[48px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[32px] font-medium tracking-[0.64px] text-ink md:text-[45px] md:tracking-[1.2px]">
           Real Stories. Real Transformation.
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">

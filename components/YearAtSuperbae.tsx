@@ -108,7 +108,7 @@ export default function YearAtSuperbae() {
   return (
     <section className="px-6 py-6 md:px-[50px] md:py-[30px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[48px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[45px] md:tracking-[1.2px]">
           Year at Superbae
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">

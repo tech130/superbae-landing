@@ -37,7 +37,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="px-6 py-16 md:px-[50px] md:py-[70px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[32px] font-medium tracking-[0.64px] text-ink md:text-[48px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[32px] font-medium tracking-[0.64px] text-ink md:text-[45px] md:tracking-[1.2px]">
           Your best year starts on January 1, 2027
         </h2>
         <p className="mx-auto mt-2 max-w-3xl font-body text-[16px] text-ink/60 md:text-[16px]">
