@@ -116,18 +116,18 @@ function SnapchatIcon() {
 
 // href: "#" is a placeholder — swap in the real profile URL once it's available.
 const socials = [
-  { label: "X", href: "https://x.com/SpaceandBeauty", icon: <XIcon /> },
+  { label: "X", href: "https://x.com/the_superbae", icon: <XIcon /> },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/thesuperbae?igsh=MWh4ZmkwNGd2d3VxbA==",
+    href: "https://www.instagram.com/thesuperbae/",
     icon: <InstagramIcon />,
   },
-  { label: "Facebook", href: "https://www.facebook.com/share/1CP71vuzL5/", icon: <FacebookIcon /> },
-  { label: "LinkedIn", href: "#", icon: <LinkedInIcon /> },
-  { label: "Pinterest", href: "#", icon: <PinterestIcon /> },
-  { label: "YouTube", href: "#", icon: <YoutubeIcon /> },
-  { label: "Threads", href: "#", icon: <ThreadsIcon /> },
-  { label: "Snapchat", href: "#", icon: <SnapchatIcon /> },
+  { label: "Facebook", href: "https://www.facebook.com/thesuperbae", icon: <FacebookIcon /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/superbae/", icon: <LinkedInIcon /> },
+  // { label: "Pinterest", href: "#", icon: <PinterestIcon /> },
+  // { label: "YouTube", href: "#", icon: <YoutubeIcon /> },
+  // { label: "Threads", href: "#", icon: <ThreadsIcon /> },
+  // { label: "Snapchat", href: "#", icon: <SnapchatIcon /> },
 ];
 
 export default function Footer() {
