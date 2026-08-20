@@ -49,8 +49,8 @@
 .ss-heading {
   color: #000;
   word-break: break-word;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 500;
   line-height: 1.1;
 }
 
@@ -60,7 +60,7 @@
   color: #747474;
   white-space: nowrap;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Download App button */
@@ -247,12 +247,12 @@
    ================================================ */
 @media (max-width: 1024px) {
   .ss-heading {
-    font-size: 44px;
+    font-size: 32px;
     letter-spacing: 0.8px;
   }
 
   .ss-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .ss-collage {
@@ -336,13 +336,13 @@
 @media (min-width: 1025px) {
   .ss-heading {
     /* 48px matches the h2 size standardized across every other section */
-    font-size: 48px;
+    font-size: 32px;
     letter-spacing: 0.8px;
     font-weight: 500;
   }
 
   .ss-subtitle {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
   }
 
@@ -431,7 +431,7 @@
   }
 
   .ss-heading {
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 0.5px;
   }
 
@@ -531,17 +531,17 @@
   }
 
   .ss-heading {
-    font-size: 26px;
+    font-size: 28px;
     letter-spacing: 0;
   }
 
   .ss-subtitle {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .ss-badge {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 12px;
+    padding: 8px 12px;
   }
 
   .ss-download-btn {

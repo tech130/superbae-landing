@@ -28,7 +28,7 @@ function TestimonialCard({ src, video }: Omit<Testimonial, "id">) {
 
   return (
     <div
-      className="group relative flex h-[410px] w-[273px] shrink-0 items-center justify-center overflow-hidden rounded-[24px] bg-neutral-200 transition-transform duration-300 ease-out hover:z-10  hover:shadow-[0_20px_45px_rgba(0,0,0,0.25)]"
+      className="group relative flex h-[400px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[24px] bg-neutral-200 transition-transform duration-300 ease-out hover:z-10  hover:shadow-[0_20px_45px_rgba(0,0,0,0.25)]"
       onMouseEnter={() => {
         setHovered(true);
         videoRef.current?.play();
@@ -75,9 +75,9 @@ export default function Testimonials() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <section id="stories" className="scroll-mt-30 overflow-hidden px-6 py-16 md:px-[50px] md:py-[10px]">
+    <section id="stories" className="scroll-mt-30 overflow-hidden px-6 py-6 md:px-[50px] md:py-[10px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[32px] font-medium tracking-[0.64px] text-ink md:text-[32px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[28px] font-medium tracking-[0.64px] text-ink md:text-[32px] md:tracking-[1.2px]">
           Real Stories. Real Transformation.
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">
@@ -86,7 +86,7 @@ export default function Testimonials() {
 
         <div className="relative mt-16 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
           <div
-            className="animate-marquee flex w-max gap-6"
+            className="animate-marquee flex w-max gap-4"
             style={{ animationPlayState: paused ? "paused" : "running" }}
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}

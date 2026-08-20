@@ -73,7 +73,7 @@ export default function Highlights() {
 
         <div className="relative flex flex-col items-center gap-10 px-6 py-14 text-center md:px-16 md:py-20">
           <div>
-            <h2 className="font-display text-[38px] font-medium tracking-[0.76px] text-white md:text-[32px] md:tracking-[1.2px]">
+            <h2 className="font-display text-[28px] font-medium tracking-[0.76px] text-white md:text-[32px] md:tracking-[1.2px]">
               Goa Retreat
             </h2>
             <p className="mx-auto max-w-2xl font-body text-[16px] text-white/80 md:text-[19px]">

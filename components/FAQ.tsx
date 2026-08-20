@@ -79,7 +79,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="scroll-mt-30 px-6 py-16 md:px-[50px] md:py-[70px]">
       <div className="mx-auto max-w-[820px] text-center">
-        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[32px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[28px] font-medium tracking-[0.72px] text-ink md:text-[32px] md:tracking-[1.2px]">
           FAQ
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[18px]">

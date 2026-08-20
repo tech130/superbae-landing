@@ -64,7 +64,7 @@ export default function Ecosystem() {
   return (
     <section id="how-it-works" className="scroll-mt-30 px-6 md:px-[20px]  lg:px-[20px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[34px] font-medium tracking-[0.68px] text-ink md:text-[32px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[28px] font-medium tracking-[0.68px] text-ink md:text-[32px] md:tracking-[1.2px]">
           How You Do It
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[16px]">

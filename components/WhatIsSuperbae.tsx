@@ -165,7 +165,7 @@ export default function WhatIsSuperbae() {
   return (
     <section id="about" className="scroll-mt-30 px-6 py-10 md:px-[50px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[32px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[28px] font-medium tracking-[0.72px] text-ink md:text-[32px] md:tracking-[1.2px]">
           What is Superbae
         </h2>
         <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[18px]">

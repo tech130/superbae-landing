@@ -106,13 +106,13 @@ function HabitChip({
 
 export default function ThirtySuperHabits() {
   return (
-    <section id="habits" className="scroll-mt-30 px-4 py-10 md:py-[10px]">
+    <section id="habits" className="scroll-mt-30 px-4 py-3 md:py-[10px]">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center text-center">
         <div>
-          <h2 className="font-display text-[38px] font-medium tracking-[0.76px] text-ink md:text-[32px] md:tracking-[1.2px]">
+          <h2 className="font-display text-[28px] font-medium tracking-[0.76px] text-ink md:text-[32px] md:tracking-[1.2px]">
             30 Super Habits
           </h2>
-          <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[19px]">
+          <p className="mx-auto max-w-2xl font-body text-[16px] text-ink/60 md:text-[19px] mb-5">
             30 simple habits across 5 pillars that build your best life
           </p>
         </div>

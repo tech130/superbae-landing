@@ -92,7 +92,7 @@ export default function Hero() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-        <div className="relative flex min-h-[450px] flex-col justify-between px-6 py-10 md:min-h-[650px] md:px-[50px] ">
+        <div className="relative flex min-h-[580px] flex-col justify-between px-6 py-10 md:min-h-[650px] md:px-[50px] ">
           {/* Top content */}
           <div className="max-w-[765px] mt-20 md:mt-12">
             <h1 className="font-display text-[42px] font-[500] leading-none tracking-[-1.08px] text-white md:hidden">
@@ -103,7 +103,7 @@ export default function Hero() {
             </h1>
 
             <div className="mt-8 inline-flex items-center justify-center rounded-[30px] bg-[rgba(42,42,42,0.5)] px-5 py-[5px] backdrop-blur-[10px] md:bg-[rgba(21,21,81,0.25)]">
-              <p className="font-body text-[10px] font-[400] tracking-[-0.24px] text-white md:font-[300] md:tracking-normal md:text-[19px]" >
+              <p className="font-body text-[12px] font-[400] tracking-[-0.24px] text-white md:font-[300] md:tracking-normal md:text-[19px]" >
                 Transform in one year. Together.
               </p>
             </div>
