@@ -125,8 +125,8 @@ const socials = [
   { label: "Facebook", href: "https://www.facebook.com/thesuperbae", icon: <FacebookIcon /> },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/superbae/", icon: <LinkedInIcon /> },
   // { label: "Pinterest", href: "#", icon: <PinterestIcon /> },
-  // { label: "YouTube", href: "#", icon: <YoutubeIcon /> },
-  // { label: "Threads", href: "#", icon: <ThreadsIcon /> },
+  { label: "YouTube", href: "https://www.youtube.com/@Superbae841", icon: <YoutubeIcon /> },
+  { label: "Threads", href: "https://www.threads.com/@the_superbae", icon: <ThreadsIcon /> },
   // { label: "Snapchat", href: "#", icon: <SnapchatIcon /> },
 ];
 

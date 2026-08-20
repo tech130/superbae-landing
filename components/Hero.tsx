@@ -81,7 +81,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="md:px-[50px] md:pt-6">
+    <section className="md:px-[50px] md:pt-1">
       <div className="relative isolate w-full overflow-hidden rounded-b-[50px] md:rounded-[50px]">
         <video
         src="/assets/Hero/woman-walking-on-a-paradise-beach-at-sunset-in-fuv-2026-01-22-09-43-43-utc.mp4"
@@ -92,36 +92,28 @@ export default function Hero() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-        <div className="relative flex min-h-[550px] flex-col justify-between px-6 py-10 md:min-h-[800px] md:px-[50px] ">
+        <div className="relative flex min-h-[450px] flex-col justify-between px-6 py-10 md:min-h-[650px] md:px-[50px] ">
           {/* Top content */}
           <div className="max-w-[765px] mt-20 md:mt-12">
             <h1 className="font-display text-[42px] font-[500] leading-none tracking-[-1.08px] text-white md:hidden">
-              Become
-              <br />
-              the person you&rsquo;ve
-              <br />
-              always wanted
-              <br />
-              to be !
+            Your Personal Transformation, backed by Science. 
             </h1>
             <h1 className="hidden font-display text-[60px] font-[500] leading-[0.95] tracking-[-1.36px] text-white md:block ">
-              Become the person
-              <br />
-              you&rsquo;ve always wanted to be
+             Your Personal Transformation, backed by Science.
             </h1>
 
             <div className="mt-8 inline-flex items-center justify-center rounded-[30px] bg-[rgba(42,42,42,0.5)] px-5 py-[5px] backdrop-blur-[10px] md:bg-[rgba(21,21,81,0.25)]">
               <p className="font-body text-[10px] font-[400] tracking-[-0.24px] text-white md:font-[300] md:tracking-normal md:text-[19px]" >
-                12 Months . 30 Super Habits . One Community . One Better You.
+                Transform in one year. Together.
               </p>
             </div>
 
 
-            <p className="mt-8 max-w-[689px] font-body text-[16px] font-[400] leading-[1.3] tracking-[-0.32px] text-white md:font-[400] md:tracking-[-0.4px] md:text-[20px]">
+            {/* <p className="mt-8 max-w-[689px] font-body text-[16px] font-[400] leading-[1.3] tracking-[-0.32px] text-white md:font-[400] md:tracking-[-0.4px] md:text-[20px]">
               Superbae is a year-long transformation journey for your body, mind,
               relationship, learning and wealth. Built on habits, driven by
               community, designed for real change.
-            </p>
+            </p> */}
 
 
 
@@ -190,7 +182,7 @@ export default function Hero() {
           </div>
 
           {/* Stats row */}
-          <div className="mt-16 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:mt-70 md:gap-x-20 md:justify-center">
+          {/* <div className="mt-16 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:mt-70 md:gap-x-20 md:justify-center">
             {stats.map((stat, i) => (
               <div key={stat.label} className="flex items-center align-center justify-center gap-4 md:gap-10">
                 {i !== 0 && (
@@ -209,7 +201,7 @@ export default function Hero() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

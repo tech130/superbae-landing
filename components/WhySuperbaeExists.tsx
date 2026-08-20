@@ -1,9 +1,9 @@
 function RoadmapIcon() {
   return (
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60" fill="none">
-  <path d="M6.25195 23.749H53.752M6.25195 23.749V51.249C6.25195 51.9121 6.51535 52.548 6.98419 53.0168C7.45303 53.4856 8.08891 53.749 8.75195 53.749H51.252C51.915 53.749 52.5509 53.4856 53.0197 53.0168C53.4886 52.548 53.752 51.9121 53.752 51.249V23.749M6.25195 23.749V12.499C6.25195 11.836 6.51535 11.2001 6.98419 10.7313C7.45303 10.2624 8.08891 9.99902 8.75195 9.99902H51.252C51.915 9.99902 52.5509 10.2624 53.0197 10.7313C53.4886 11.2001 53.752 11.836 53.752 12.499V23.749" stroke="#6437E5" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M20.0039 38.748L27.5039 46.248L42.5039 31.248" stroke="#6437E5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M20.0039 6.24902V16.249M40.0039 6.24902V16.249" stroke="#6437E5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M6.25195 23.749H53.752M6.25195 23.749V51.249C6.25195 51.9121 6.51535 52.548 6.98419 53.0168C7.45303 53.4856 8.08891 53.749 8.75195 53.749H51.252C51.915 53.749 52.5509 53.4856 53.0197 53.0168C53.4886 52.548 53.752 51.9121 53.752 51.249V23.749M6.25195 23.749V12.499C6.25195 11.836 6.51535 11.2001 6.98419 10.7313C7.45303 10.2624 8.08891 9.99902 8.75195 9.99902H51.252C51.915 9.99902 52.5509 10.2624 53.0197 10.7313C53.4886 11.2001 53.752 11.836 53.752 12.499V23.749" stroke="#6437E5" strokeWidth="5" strokeLinejoin="round"/>
+  <path d="M20.0039 38.748L27.5039 46.248L42.5039 31.248" stroke="#6437E5" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M20.0039 6.24902V16.249M40.0039 6.24902V16.249" stroke="#6437E5" strokeWidth="5" strokeLinecap="round"/>
 </svg>
   );
 }
@@ -121,7 +121,7 @@ export default function WhySuperbaeExists() {
   return (
     <section className="px-6 py-6 md:px-[40px] md:py-[30px]">
       <div className="mx-auto max-w-[1440px] text-center">
-        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[45px] md:tracking-[1.2px]">
+        <h2 className="font-display text-[36px] font-medium tracking-[0.72px] text-ink md:text-[32px] md:tracking-[1.2px]">
           Why Superbae Exists
         </h2>
         <p className="mx-auto  max-w-2xl font-body  font-[400] text-[16px] text-ink/60 md:text-[16px]">

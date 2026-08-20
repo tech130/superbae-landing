@@ -8,6 +8,7 @@ import MomentsGallery from "@/components/MomentsGallery";
 import Highlights from "@/components/Highlights";
 import Ecosystem from "@/components/Ecosystem";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import BannerCTA from "@/components/BannerCTA";
 import Footer from "@/components/Footer";
@@ -19,12 +20,13 @@ export default function Home() {
       <NavBar />
       <Hero />
       <WhatIsSuperbae />
-      <WhySuperbaeExists />
+      {/* <WhySuperbaeExists /> */}
       <ThirtySuperHabits />
-      <YearAtSuperbae />
-      <Highlights />
+      {/* <YearAtSuperbae /> */}
       <Ecosystem />
+      <Highlights />
       <Testimonials />
+      <FAQ />
       <Pricing />
          <StopSwitching />
       <BannerCTA />

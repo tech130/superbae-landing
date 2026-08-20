@@ -4,14 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Transformation Program", href: "#habits" },
-  // { label: "30 Super Habits", href: "#habits" },
-  { label: "App", href: "#app" },
-  { label: "Planner", href: "#planner" },
-  { label: "Community", href: "#community" },
-  { label: "Events", href: "#events" },
   { label: "About", href: "#about" },
-  { label: "Blog", href: "#blog" },
+  { label: "Habits", href: "#habits" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Retreat", href: "#retreat" },
+  { label: "Stories", href: "#stories" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 // Shared "active" look so the clicked link always matches the default active pill.
@@ -51,11 +49,39 @@ export default function NavBar() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [isOpen]);
 
+  // Scroll-spy: highlight the nav link for whichever section is currently
+  // in view, so the pill follows manual scrolling too (not just clicks).
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.querySelector(link.href))
+      .filter((el): el is Element => el !== null);
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Pick the entry closest to the top of the viewport among those
+        // currently intersecting, so the "active" section matches what's
+        // visually at/near the top under the fixed header.
+        const visible = entries.filter((entry) => entry.isIntersecting);
+        if (visible.length === 0) return;
+        const top = visible.reduce((closest, entry) =>
+          entry.boundingClientRect.top < closest.boundingClientRect.top ? entry : closest
+        );
+        const href = `#${top.target.id}`;
+        setActiveHref(href);
+      },
+      { rootMargin: "-104px 0px -70% 0px", threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <header
         className={
-          "fixed inset-x-0 top-0 z-50 mx-4 mt-4 flex items-center justify-between rounded-[58px] px-5 py-[10px] backdrop-blur-[15px] transition-all duration-300 md:mx-0 md:mt-0 md:rounded-none md:px-[50px] md:py-6 " +
+          "fixed inset-x-0 top-0 z-50 mx-4 mt-4 flex items-center justify-between rounded-[58px] px-5 py-[10px] backdrop-blur-[15px] transition-all duration-300 md:mx-0 md:mt-0 md:rounded-none md:px-[50px] " +
           (scrolled
             ? "bg-white/70 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] md:bg-white/70 md:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] md:backdrop-blur-[15px]"
             : "bg-[rgba(255,255,255,0.2)] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] md:bg-transparent md:shadow-none md:backdrop-blur-none")
